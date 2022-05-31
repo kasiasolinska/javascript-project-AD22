@@ -1,0 +1,53 @@
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .logo {
+    height: 100px;
+  }
+  
+  main {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .single_section {
+    background-color: rgba(0, 0, 0, 0.59);
+    display: flex;
+    flex-direction: column;
+    color: ghostwhite;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  #map {
+    height: 300px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  #new_picture {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  
+  #generate_id {
+    margin: auto;
+  }
+  
+  #toggle_screen {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .notes li:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+  }
+  
