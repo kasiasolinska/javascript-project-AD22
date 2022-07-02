@@ -1,5 +1,5 @@
 const $login = document.getElementById("login_input");
-const $password = document.getElementById("password_input");
+const $Password = document.getElementById("password_input");
 const $loginButton = document.getElementById("login_button");
 const $loginError = document.getElementById("login_error");
 // https://login-service-wsb-wj.netlify.app/.netlify/functions/login
@@ -29,7 +29,7 @@ const $loginError = document.getElementById("login_error");
 // };
 
 const loginHandler = () => {
-  const password = $password.value;
+  const password = $Password.value;
   const login = $login.value;
 
   //body
@@ -43,9 +43,9 @@ const loginHandler = () => {
       password,
     }),
   })
-    .then((response) => response.json())
-    .then((response) => {
-      if (response.isLogged) {
+    .then((Response) => Response.json())
+    .then((Response) => {
+      if (Response.isLogged) {
         localStorage.setItem("isLoggedIn", "yes");
         window.location.href = "./mainScreen.html";
       } else {
