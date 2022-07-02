@@ -19,8 +19,8 @@
     ></script>
   </head>
   <body>
+    <button class="btn" id="toggle_screen">TASKS / HOME</button>
     <main>
-      <button class="btn" id="toggle_screen">Toggle screen</button>
       <button class="btn" id="logout">LOGOUT</button>
       <img src="./assets/logo1.png" class="logo" />
       <div id="general_screen">
@@ -57,22 +57,30 @@
           <div>
             <p><span>Name: </span><span id="new_name"></span></p>
             <p><span>Email: </span><span id="new_email"></span></p>
+            <button class="btn" id="generate_id">Generate</button>
           </div>
-          <button class="btn" id="generate_id">Generate</button>
         </section>
       </div>
 
       <div id="notes_screen" class="hidden">
         <section class="single_section">
-          <h2>Notes</h2>
+          <div class="input_container">
+            <label>NEW AGENT'S TASKS</label>
+            <input id="new_task_input" />
+            <button class="btn" id="add_task">ADD</button>
+            <button class="btn" id="load_tasks">LOAD TASKS</button>
+            <!--<h2>Notes</h2>
           <ul class="notes">
             <li>Text1Text1Text1</li>
             <li>Text2Text1Text1</li>
             <li>Text3Text1Text1</li>
-          </ul>
+          </ul> -->
+          </div>
+          <ul id="task_list"></ul>
         </section>
       </div>
     </main>
+
     <script src="./scripts/mainScreen.js"></script>
   </body>
 </html>

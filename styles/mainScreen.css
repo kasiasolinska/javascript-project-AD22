@@ -4,6 +4,13 @@
     right: 20px;
   }
   
+  #toggle_screen {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+  }
+
   .logo {
     height: 100px;
   }
@@ -40,14 +47,18 @@
     margin: auto;
   }
   
-  #toggle_screen {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-  }
   
-  .notes li:hover {
+  
+  .task:hover {
     cursor: pointer;
     text-decoration: line-through;
   }
-  
+
+  #task_list li {
+    list-style:none;
+
+  }
+
+  .input_container label {
+    margin-top: 25px;
+  }

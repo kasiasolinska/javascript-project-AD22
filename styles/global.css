@@ -16,6 +16,7 @@ body {
     background-position: center;
     background-size: no-repeat;
     background-repeat: no-repeat;
+    font-size: large;
 }
 
 .input_container {
@@ -42,7 +43,16 @@ body {
     padding: 10px 20px;
     color: ghostwhite;
     cursor: pointer;
+    border-radius: 10px;
 
+}
+
+.btn:hover{
+    transform: translate(-3px);
+}
+
+.btn:active{
+    transform: translate(-1px);
 }
 
 .hidden {
